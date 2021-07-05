@@ -16,16 +16,14 @@ const MobileDrawer: React.FC<{}> = () => {
         handler={false}
         duration={'0.4s'}
       >
-        <div className="space-y-24">
-          <div className="relative">
-            <button
-              className="absolute right-5 -bottom-3"
-              onClick={() => setIsDrawerOpen((prevState) => !prevState)}
-            >
-              <IoMdClose className="w-6 h-6 text-gray-600" />
-            </button>
-          </div>
-          <div className="flex flex-col divide-y px-8 w-full">
+        <div className="relative mt-6">
+          <button
+            className="absolute right-7"
+            onClick={() => setIsDrawerOpen((prevState) => !prevState)}
+          >
+            <IoMdClose className="w-6 h-6 text-black" />
+          </button>
+          <div className="mt-14 absolute flex flex-col divide-y px-8 w-full">
             {data.map((item, i) => (
               <Link
                 activeClass="active"
@@ -35,7 +33,7 @@ const MobileDrawer: React.FC<{}> = () => {
                 offset={-70}
                 duration={500}
                 key={i}
-                className="text-base font-medium cursor-pointer hover:text-[#ea3a60] text-gray-600 py-4"
+                className="text-base font-medium cursor-pointer hover:text-[#2563ff] text-gray-700 py-4"
               >
                 {item.label}
               </Link>

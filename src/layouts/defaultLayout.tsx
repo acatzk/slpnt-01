@@ -19,7 +19,7 @@ const Layout: React.FC<{}> = ({ children }) => {
       <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
         <Header
           className={`${
-            isSticky ? 'shadow-md' : 'shadow-none'
+            isSticky ? 'shadow' : 'shadow-none'
           } transition ease-in-out duration-300`}
         />
       </Sticky>

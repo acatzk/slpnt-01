@@ -22,13 +22,19 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           <div className="flex items-center space-x-6">
             {data.map((item, i) => (
               <Link
+                key={i}
                 activeClass="active"
                 to={item.path}
                 spy={true}
                 smooth={true}
+                hashSpy={true}
                 offset={-70}
                 duration={500}
-                key={i}
+                delay={1000}
+                isDynamic={true}
+                // onSetActive={this.handleSetActive}
+                // onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
                 className="text-base cursor-pointer hover:text-[#ea3a60] text-gray-600"
               >
                 {item.label}
