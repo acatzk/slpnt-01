@@ -12,6 +12,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <header
+      id="header"
       className={`${className} bg-white py-4 transition ease-in-out duration-300`}
     >
       <div className="flex items-center justify-between px-5 mx-auto max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
@@ -32,8 +33,6 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 duration={500}
                 delay={1000}
                 isDynamic={true}
-                // onSetActive={this.handleSetActive}
-                // onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
                 className="text-base cursor-pointer hover:text-[#ea3a60] text-gray-600"
               >
