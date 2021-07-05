@@ -51,10 +51,6 @@ const SEO: React.FC<SEOProps> = ({
   return (
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
       ))}

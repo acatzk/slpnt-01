@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 delay={1000}
                 isDynamic={true}
                 ignoreCancelEvents={false}
-                className="text-base cursor-pointer hover:text-[#ea3a60] text-gray-600"
+                className="text-base text-medium cursor-pointer hover:text-default-pink text-default-gray"
               >
                 {item.label}
               </Link>
@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         </div>
         <div className="flex items-center">
           <button
-            className="py-3 px-7 scale-75 md:scale-95 rounded-full font-medium text-[#ea3a60] hover:text-white bg-white border-2 border-[#ea3a60] hover:bg-[#ea3a60] transition ease-in-out duration-300 focus:outline-none"
+            className="py-3 px-7 scale-75 md:scale-95 rounded-full font-semibold md:font-medium text-default-pink hover:text-white bg-white border-2 border-default-pink hover:bg-default-pink transition ease-in-out duration-300 focus:outline-none"
             aria-label="Get Started"
           >
             Get Started

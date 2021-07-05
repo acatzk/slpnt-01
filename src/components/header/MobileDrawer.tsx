@@ -40,7 +40,7 @@ const MobileDrawer: React.FC<{}> = () => {
                     offset={-70}
                     duration={500}
                     key={i}
-                    className="text-base font-medium cursor-pointer hover:text-[#2563ff] text-gray-700 py-4"
+                    className="text-base font-medium cursor-pointer hover:text-default-blue text-gray-700 py-4"
                   >
                     {item.label}
                   </Link>
@@ -50,7 +50,7 @@ const MobileDrawer: React.FC<{}> = () => {
             <div className="flex items-center space-x-3 mx-auto">
               {social.map(({ path, Icon }, i) => (
                 <Link to={path} key={i}>
-                  <Icon className="w-4 h-4 cursor-pointer text-[#343d48] hover:text-[#2563ff] transition ease-in-out duration-150" />
+                  <Icon className="w-4 h-4 cursor-pointer text-default-gray hover:text-default-blue transition ease-in-out duration-150" />
                 </Link>
               ))}
             </div>
